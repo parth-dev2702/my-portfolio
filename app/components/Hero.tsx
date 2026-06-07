@@ -6,8 +6,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       {/* Immersive background decoration */}
       <div className="absolute inset-0 grid-bg opacity-40 z-0 pointer-events-none" />
-      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-600/10 rounded-full blur-[100px] animate-pulse-slow pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] animate-pulse-slow pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-500/10 rounded-full blur-[100px] animate-pulse-slow pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] animate-pulse-slow pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10 w-full py-12">
         {/* Left column - Content */}
@@ -63,7 +63,7 @@ export default function Hero() {
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="glass-panel glass-panel-hover p-4 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group"
+                className="glass-panel glass-panel-hover glow-card p-4 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group"
               >
                 <span className="text-3xl md:text-4xl font-extrabold bg-gradient-to-br from-white to-slate-400 bg-clip-text text-transparent group-hover:from-indigo-300 group-hover:to-purple-300 transition-all">
                   {stat.value}
@@ -80,10 +80,10 @@ export default function Hero() {
         <div className="flex justify-center items-center lg:justify-end">
           <div className="relative group w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] md:w-[400px] md:h-[400px]">
             {/* Pulsing glow under picture */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full blur-[30px] opacity-40 group-hover:opacity-60 transition-all duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400 to-indigo-500 rounded-full blur-[30px] opacity-40 group-hover:opacity-60 transition-all duration-500" />
             
             {/* Spinning decorative border */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500 via-purple-600 to-pink-500 rounded-full p-[3px] animate-spin-slow opacity-80" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-600 rounded-full p-[3px] animate-spin-slow opacity-80" />
 
             {/* Main Picture Wrapper */}
             <div className="absolute inset-[6px] rounded-full overflow-hidden bg-[#030014] flex items-center justify-center border-4 border-slate-950">

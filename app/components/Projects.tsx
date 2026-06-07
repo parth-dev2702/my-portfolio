@@ -52,7 +52,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between transform hover:-translate-y-2"
+              className="glass-panel glass-panel-hover glow-card p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between transform hover:-translate-y-2"
             >
               <div>
                 {/* Project Header Icons */}

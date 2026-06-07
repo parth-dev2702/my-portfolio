@@ -74,7 +74,7 @@ export default function Skills() {
           {Object.entries(skills).map(([title, { items, icon, description }]) => (
             <div
               key={title}
-              className={`glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between ${
+              className={`glass-panel glass-panel-hover glow-card p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between ${
                 title === "Backend" ? "md:col-span-2" : ""
               }`}
             >
